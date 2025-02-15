@@ -26,6 +26,7 @@ class _HomeUIState extends State<HomeUI> {
                 child: Image.asset(
                   'assets/images/img.png',
                   height: MediaQuery.of(context).size.height * 0.35,
+
                 ),
               ),
               SizedBox(height: MediaQuery.of(context).size.height * 0.03),
