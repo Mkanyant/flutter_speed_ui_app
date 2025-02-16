@@ -20,7 +20,9 @@ class _A01PageUIState extends State<A01PageUI> {
         child: Center(
           child: Column(
             children: [
-              SizedBox(height: MediaQuery.of(context).size.height * 0.015),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.015
+                ),
               Align(
                 alignment: Alignment.center,
                 child: Container(
@@ -39,7 +41,72 @@ class _A01PageUIState extends State<A01PageUI> {
                   ),
                 ),
               ),
-              SizedBox(height: MediaQuery.of(context).size.height * 0.03),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.03
+                ),
+                Text(
+                'Discover Your',
+                style: TextStyle(
+                  fontSize: MediaQuery.of(context).size.height * 0.04,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                'Own Dream House',
+                style: TextStyle(
+                  fontSize: MediaQuery.of(context).size.height * 0.04,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit.'),
+              Text(
+                  'Diam maecenas mi non sed ut odio. Non, justo, sed facilisi'),
+              Text('et. Eget viverra urna, vestibulum egestas faucibus'),
+              Text('egestas. Sagittis nam velit volutpat eu nunc.'),
+              SizedBox(height: 20),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30),
+            child: Row(
+              children: [
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color.fromARGB(255, 224, 141, 204),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      padding: EdgeInsets.symmetric(vertical: 15),
+                    ),
+                    child: Text(
+                      "Sign in",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                height: MediaQuery.of(context).size.height * 0.03
+                ),
+                Expanded(
+                  child: OutlinedButton(
+                    onPressed: () {},
+                    style: OutlinedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      padding: EdgeInsets.symmetric(vertical: 15),
+                    ),
+                    child: Text(
+                      'Register',
+                      style: TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
             ],
           ),
         ),
